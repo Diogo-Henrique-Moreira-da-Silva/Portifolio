@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">Portfólio — Diogo</title>
+
+  <link rel="stylesheet" href="HomePage.css">
+  <script defer src="HomePage.js"></script>
+  <!-- Carregue seu i18n depois do HTML -->
+  <script defer src="i18n.js"></script>
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+  <p class="brand" data-i18n="nav.brand">Diogo Henrique</p>
+
+  <!-- botão sanduíche (aparece no mobile) -->
+  <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- links agrupados -->
+  <div class="nav-links" id="nav-links">
+    <a href="../Projetos/projetos.html" data-i18n="nav.projects">Projetos</a>
+    <a href="../Experiencia/Experiencia.html" data-i18n="nav.experience">Experiência</a>
+    <a href="../Contato/Contato.html" data-i18n="nav.contact">Contato</a>
+
+    <div class="lang-switch">
+      <button id="lang-toggle" type="button">EN</button>
+    </div>
+  </div>
+</nav>
+
+
+  <div id="container">
+    <!-- COLUNA ESQUERDA -->
+    <div id="left">
+      <div id="foto">
+        <img src="../Img/vinny.png" alt="Foto de perfil" id="perfil">
+      </div>
+
+      <div id="nome">
+        <h2 data-i18n="profile.name">Diogo Henrique Moreira da Silva</h2>
+        <p id="sub" data-i18n="profile.role">Engenheiro de Software</p>
+      </div>
+
+      <div id="contato">
+        <p id="titulo-contato" data-i18n="contact.title">Contato</p>
+
+        <div id="socialMidia">
+          <a href="https://wa.me/5531992629429" target="_blank" aria-label="WhatsApp">
+            <img src="../Img/whatsapp.png" alt="WhatsApp">
+          </a>
+          <a href="https://www.linkedin.com/in/diogo-henrique-855b49217/" target="_blank" aria-label="LinkedIn">
+            <img src="../Img/likendin.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/Diogo-Henrique-Moreira-da-Silva" target="_blank" aria-label="GitHub">
+            <img src="../Img/github.png" alt="GitHub">
+          </a>
+          <a href="../Contato/Contato.html" target="_blank" aria-label="E-mail">
+            <img src="../Img/email.png" alt="E-mail">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUNA DIREITA -->
+    <div id="right">
+      <!-- SOBRE -->
+      <section id="ALittleAboutMe">
+        <h1><u data-i18n="about.heading">Um pouco sobre mim</u></h1>
+        <p data-i18n="about.body">
+          Olá! Meu nome é [Seu Nome], sou estudante de Engenharia de Software com formação em Ciência da Computação e grande 
+          interesse pelo desenvolvimento full-stack. Tenho experiência prática com Java, React e Tailwind CSS, além de conhecimentos 
+          sólidos em bancos de dados SQL e suporte técnico. Durante minha trajetória acadêmica e profissional, atuei no desenvolvimento
+          de soluções web, desde o design da interface até a implementação de funcionalidades e a otimização de desempenho em diferentes
+          camadas da aplicação. Também possuo uma base sólida em estruturas de dados, algoritmos e resolução de problemas, o que me ajuda
+          a lidar com desafios técnicos de forma eficiente. Estou em constante aprendizado e busco sempre oportunidades para aplicar minhas
+          habilidades em projetos inovadores e colaborativos, onde posso crescer como profissional e contribuir ativamente para o sucesso da equipe.
+        </p>
+      </section>
+
+      <!-- EDUCAÇÃO -->
+      <section id="Education">
+        <h1><u data-i18n="education.heading">Educação</u></h1>
+        <p id="puc" data-i18n="education.institution">
+          PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS (PUC MINAS)
+        </p>
+        <p data-i18n="education.desc">
+          Bacharelado em Engenharia de Software – Previsão de Conclusão: 2027. O curso de Engenharia de Software na PUC Minas me 
+          proporciona uma formação completa, focada em todo o ciclo de desenvolvimento de software. A grade curricular abrange desde
+          linguagens de programação e estruturas de dados até arquitetura de software, gestão de projetos e metodologias ágeis,
+          preparando-me para criar soluções robustas e escaláveis.
+        </p>
+      </section>
+
+      <!-- EXPERIÊNCIA -->
+      <section id="experiencia">
+        <h1><u data-i18n="experience.heading">Experiência</u></h1>
+        <p id="estagio" data-i18n="experience.role">Estágio - Suporte Técnico - Phelcon</p>
+        <p data-i18n="experience.desc">
+          Atuação em suporte técnico e acompanhamento de rotinas de TI, contribuindo para a estabilidade e o desempenho de sistemas,
+          além de interação com usuários e times para resolução de incidentes e melhoria de processos.
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

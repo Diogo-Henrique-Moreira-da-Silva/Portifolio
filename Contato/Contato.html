@@ -9,7 +9,6 @@
     <script defer src="i18n.js"></script>
   </head>
   <body>
-    <!-- NAVBAR -->
     <header class="nav">
       <div class="nav__inner">
         <a class="nav__brand" href="../HomePage/HomePage.html" data-i18n="nav.brand">Diogo Henrique</a>
@@ -25,19 +24,16 @@
           <a href="../Experiencia/Experiencia.html" data-i18n="nav.experience">Experiência</a>
           <a class="is-active" href="./contato.html" data-i18n="nav.contact">Contato</a>
 
-          <!-- botão único de idioma (PT↔EN) usado pelo i18n.js -->
           <button id="lang-toggle" type="button" class="nav__lang">EN</button>
         </nav>
       </div>
     </header>
 
-    <!-- CONTEÚDO -->
     <main class="page">
       <section class="card">
         <h1 class="card__title" data-i18n="contact.form_title">SEND ME A MESSAGE!</h1>
 
-        <form class="form" autocomplete="on">
-          <!-- E-mail -->
+        <form class="form" autocomplete="on" action="https://formspree.io/f/xyzdzyjl" method="POST">
           <label class="form__label">
             <span data-i18n="contact.email_label">EMAIL ADDRESS: <b>*</b></span>
             <input
@@ -49,7 +45,6 @@
               aria-label="Email address">
           </label>
 
-          <!-- Assunto -->
           <label class="form__label">
             <span data-i18n="contact.subject_label">SUBJECT: <b>*</b></span>
             <input
@@ -61,7 +56,6 @@
               aria-label="Subject">
           </label>
 
-          <!-- Mensagem -->
           <label class="form__label">
             <span data-i18n="contact.message_label">MESSAGE: <b>*</b></span>
             <textarea
@@ -73,7 +67,6 @@
               aria-label="Message"></textarea>
           </label>
 
-          <!-- Enviar -->
           <button class="btn" type="submit" data-i18n="contact.send">SEND MESSAGE</button>
         </form>
       </section>

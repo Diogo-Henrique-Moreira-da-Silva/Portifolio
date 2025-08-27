@@ -18,8 +18,8 @@ O objetivo é compartilhar minha trajetória como estudante e profissional de En
 
 ## 🔗 Link para o Site Publicado
 
-[Acessar Portfólio Online](https://diogohenrique.vercel.app/)
-[Acessar Repositorio do Portfólio](https://github.com/Diogo-Henrique-Moreira-da-Silva/Portifolio)
+- [Acessar Portfólio Online](https://diogohenrique.vercel.app/)
+- [Acessar Repositorio do Portfólio](https://github.com/Diogo-Henrique-Moreira-da-Silva/Portifolio)
 
 ---
 

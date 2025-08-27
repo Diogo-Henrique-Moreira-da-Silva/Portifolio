@@ -117,7 +117,7 @@ body{ margin:0; background:var(--bg); color:var(--text); font-family:system-ui, 
 .project-media img{
   display: block;
   width: 100%;
-  height: auto;            /* deixa a imagem definir a altura */
+  height: 100%;            /* deixa a imagem definir a altura */
   object-fit: contain;     /* sem cortes */
   object-position: center;
 }

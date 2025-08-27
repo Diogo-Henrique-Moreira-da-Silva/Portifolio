@@ -11,11 +11,12 @@ nav {
   display: flex;
   align-items: center;
   gap: 16px;
-  height: 90px;
+  height: 60px;
   padding: 0 16px;
   background: #0b1c33;
   border-bottom: 2px solid gray;
   position: relative; /* para o dropdown mobile posicionar sob o nav */
+  justify-content: flex-end;
 }
 
 nav p {
@@ -35,7 +36,7 @@ nav p {
 
 .nav-links a {
   text-decoration: none;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
   color: #fff;
   padding: 6px 10px;
@@ -93,48 +94,93 @@ nav p {
   min-width: 280px;
   padding: 30px 16px;
   border-right: 2px solid gray;
-  display: flex; flex-direction: column; align-items: center; gap: 18px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 18px;
 }
 
 #foto {
-  width: 310px; height: 310px; background: #fff; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
+  width: 250px; 
+  height: 250px; 
+  background: #fff; 
+  border-radius: 50%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   box-shadow: 0 0 0 4px rgba(255,255,255,.2);
 }
 #perfil {
-  width: 300px; height: 300px; border-radius: 50%; object-fit: cover;
+  width: 250px; height: 250px; 
+  border-radius: 50%; 
+  object-fit: cover;
 }
 
-#nome { text-align: center; margin: 0; }
-#sub  { font-size: 18px; font-weight: 300; margin-top: 6px; }
+#nome { 
+  text-align: center; 
+  margin: 0; }
 
-#contato { width: 100%; }
-#titulo-contato { font-size: 24px; text-align: center; font-weight: 800; margin: 24px 0 12px; }
-#left ul { list-style: none; margin: 0; padding: 0; }
+  #sub  { 
+  font-size: 18px; 
+  font-weight: 300; 
+  margin-top: 6px; }
 
-#socialMidia { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
-#socialMidia img { width: 30px; height: 30px; filter: invert(100%); }
+#contato { 
+  width: 100%; }
+
+#titulo-contato { 
+  font-size: 22px; 
+  text-align: center; 
+  font-weight: 800; 
+  margin: 24px 0 12px; }
+
+#left ul { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; }
+
+#socialMidia { 
+  display: flex; 
+  justify-content: center; 
+  gap: 16px; 
+  flex-wrap: wrap; }
+
+#socialMidia img { 
+  width: 30px; 
+  height: 30px; 
+  filter: invert(100%); }
 
 /* direita */
 #right {
   width: 70%;
   padding: 24px;
-  display: flex; flex-direction: column; gap: 28px; align-items: center;
+  display: flex; 
+  flex-direction: column; 
+  gap: 28px; 
+  align-items: center;
 }
-#ALittleAboutMe, #Education, #experiencia { width: min(900px, 100%); }
-#puc, #estagio { font-size: 20px; font-weight: 700; margin: 0 0 4px; }
+
+#ALittleAboutMe, #Education, #experiencia { 
+  width: min(900px, 100%); 
+}
+
+#puc, #estagio { 
+  font-size: 18px; 
+  font-weight: 700; 
+  margin: 0 0 4px; 
+}
 
 #ALittleAboutMe p{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 #Education p{
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 0px;
 }
 
 #experiencia p{
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 0px;
 }
 

@@ -2,32 +2,32 @@ const dict = {
   pt: {
     meta: { title: "Contato — Diogo" },
     nav: { brand: "Diogo Henrique", projects: "Projetos", experience: "Experiência", contact: "Contato" },
-    contact: {
-      form_title: "ENVIE-ME UMA MENSAGEM!",
-      email_label: "E-MAIL: *",
-      email_ph: "seuemail@exemplo.com",
-      subject_label: "ASSUNTO: *",
-      subject_ph: "Sobre o que é?",
-      message_label: "MENSAGEM: *",
-      message_ph: "Conte-me sobre seu projeto, ideia, ou apenas diga olá...",
-      send: "ENVIAR MENSAGEM"
+    
+    experience: {
+      page_title: "Minha Experiência",
+      item1: {
+        date: "23 de março de 2023",
+        role: "Assistente de Suporte de TI — pHelcon",
+        desc: "Responsável por prestar suporte técnico de primeiro nível aos usuários, solucionando problemas relacionados a hardware, software e redes. Atuação no monitoramento de sistemas, configuração de equipamentos, instalação de softwares e abertura de chamados. Colaboração direta com a equipe de TI para garantir a estabilidade dos serviços e auxiliar na manutenção preventiva e corretiva de recursos tecnológicos.",
+
+      },
+      item2: { date: "Hoje" }
     }
   },
   en: {
     meta: { title: "Contact — Diogo" },
     nav: { brand: "Diogo Henrique", projects: "Projects", experience: "Experience", contact: "Contact" },
-    contact: {
-      form_title: "SEND ME A MESSAGE!",
-      email_label: "EMAIL ADDRESS: *",
-      email_ph: "you@example.com",
-      subject_label: "SUBJECT: *",
-      subject_ph: "What's this about?",
-      message_label: "MESSAGE: *",
-      message_ph: "Tell me about your project, idea, or just say hello...",
-      send: "SEND MESSAGE"
+    experience: {
+      page_title: "My Experience",
+      item1: {
+        date: "March 23, 2023",
+        role: "IT Support Assistant — pHelcon",
+        desc: "Responsible for providing first-level technical support to users, troubleshooting issues related to hardware, software, and networks. Performed system monitoring, equipment configuration, software installation, and ticket management. Worked closely with the IT team to ensure service stability and assisted in the preventive and corrective maintenance of technological resources.",
+      },
+      item2: { date: "Today" }
     }
   }
-};
+}
 
 /* 2) HELPERS */
 const getByPath = (obj, path) =>

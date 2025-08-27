@@ -2,32 +2,20 @@ const dict = {
   pt: {
     meta: { title: "Contato — Diogo" },
     nav: { brand: "Diogo Henrique", projects: "Projetos", experience: "Experiência", contact: "Contato" },
-    contact: {
-      form_title: "ENVIE-ME UMA MENSAGEM!",
-      email_label: "E-MAIL: *",
-      email_ph: "seuemail@exemplo.com",
-      subject_label: "ASSUNTO: *",
-      subject_ph: "Sobre o que é?",
-      message_label: "MENSAGEM: *",
-      message_ph: "Conte-me sobre seu projeto, ideia, ou apenas diga olá...",
-      send: "ENVIAR MENSAGEM"
+    project: {
+        desc1: "O projeto GearUp tem como objetivo facilitar o gerenciamento de serviços automotivos por meio de uma plataforma web intuitiva e eficiente. A aplicação permite que clientes cadastrem seus veículos, agendem serviços com facilidade e acompanhem o andamento de seus atendimentos em tempo real. Já os funcionários também podem realizar cadastros de serviços, além de visualizar os agendamentos, atualizar o status dos serviços e salvar observações nos agendamentos. Além disso, o sistema oferece recursos de controle de peças e geração de relatórios mensais para auxiliar na tomada de decisões.",
+        desc2: "O projeto “Atenas Buffet” visa solucionar problemas de desorganização enfrentados por buffets que utilizam métodos manuais ou limitados, como o WhatsApp, para gerenciar suas operações. Através de uma plataforma web moderna, o sistema integra processos essenciais, como solicitação de orçamento, personalização de cardápios, agendamento de eventos, seleção de garçons e coleta de feedback. Focado na eficiência, centralização de informações e personalização, o sistema melhora a experiência dos clientes e eleva a competitividade do Buffet Atenas no mercado de eventos."
     }
   },
   en: {
     meta: { title: "Contact — Diogo" },
     nav: { brand: "Diogo Henrique", projects: "Projects", experience: "Experience", contact: "Contact" },
-    contact: {
-      form_title: "SEND ME A MESSAGE!",
-      email_label: "EMAIL ADDRESS: *",
-      email_ph: "you@example.com",
-      subject_label: "SUBJECT: *",
-      subject_ph: "What's this about?",
-      message_label: "MESSAGE: *",
-      message_ph: "Tell me about your project, idea, or just say hello...",
-      send: "SEND MESSAGE"
+    project: { 
+      desc1: "The GearUp project aims to facilitate the management of automotive services through an intuitive and efficient web platform. The application allows customers to register their vehicles, easily schedule services, and track the progress of their appointments in real time. Employees can also register services, view schedules, update service statuses, and record notes on appointments. In addition, the system offers parts control features and generates monthly reports to support decision-making.",
+      desc2: "The Athenas Buffet project seeks to address disorganization issues faced by buffets that rely on manual methods or limited tools, such as WhatsApp, to manage their operations. Through a modern web platform, the system integrates essential processes such as budget requests, menu customization, event scheduling, waiter selection, and feedback collection. Focused on efficiency, information centralization, and personalization, the system enhances the customer experience and increases Athenas Buffet’s competitiveness in the events market."
     }
   }
-};
+}
 
 /* 2) HELPERS */
 const getByPath = (obj, path) =>

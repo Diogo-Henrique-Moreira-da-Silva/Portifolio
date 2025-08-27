@@ -7,20 +7,16 @@
 
   <link rel="stylesheet" href="HomePage.css">
   <script defer src="HomePage.js"></script>
-  <!-- Carregue seu i18n depois do HTML -->
   <script defer src="i18n.js"></script>
 </head>
 <body>
   <!-- NAV -->
   <nav>
-  <p class="brand" data-i18n="nav.brand">Diogo Henrique</p>
 
-  <!-- botão sanduíche (aparece no mobile) -->
   <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
     <span></span><span></span><span></span>
   </button>
 
-  <!-- links agrupados -->
   <div class="nav-links" id="nav-links">
     <a href="../Projetos/projetos.html" data-i18n="nav.projects">Projetos</a>
     <a href="../Experiencia/Experiencia.html" data-i18n="nav.experience">Experiência</a>
@@ -34,7 +30,6 @@
 
 
   <div id="container">
-    <!-- COLUNA ESQUERDA -->
     <div id="left">
       <div id="foto">
         <img src="../Img/vinny.png" alt="Foto de perfil" id="perfil">
@@ -65,23 +60,20 @@
       </div>
     </div>
 
-    <!-- COLUNA DIREITA -->
     <div id="right">
-      <!-- SOBRE -->
       <section id="ALittleAboutMe">
         <h1><u data-i18n="about.heading">Um pouco sobre mim</u></h1>
         <p data-i18n="about.body">
-          Olá! Meu nome é [Seu Nome], sou estudante de Engenharia de Software com formação em Ciência da Computação e grande 
-          interesse pelo desenvolvimento full-stack. Tenho experiência prática com Java, React e Tailwind CSS, além de conhecimentos 
-          sólidos em bancos de dados SQL e suporte técnico. Durante minha trajetória acadêmica e profissional, atuei no desenvolvimento
-          de soluções web, desde o design da interface até a implementação de funcionalidades e a otimização de desempenho em diferentes
-          camadas da aplicação. Também possuo uma base sólida em estruturas de dados, algoritmos e resolução de problemas, o que me ajuda
-          a lidar com desafios técnicos de forma eficiente. Estou em constante aprendizado e busco sempre oportunidades para aplicar minhas
-          habilidades em projetos inovadores e colaborativos, onde posso crescer como profissional e contribuir ativamente para o sucesso da equipe.
+          Olá! Meu nome é Diogo Henrique, sou estudante de Engenharia de Software grande interesse pelo desenvolvimento de software,
+          em especial na área do backend. Tenho experiência prática com Java, Html e Tailwind CSS, além de conhecimentos sólidos em 
+          bancos de dados SQL e suporte técnico. Durante minha trajetória acadêmica e profissional, atuei no desenvolvimento
+          de soluções web, implementação de funcionalidades e suporte tecnico. Também possuo uma base em estruturas de dados, 
+          algoritmos e resolução de problemas, o que me ajuda a lidar com desafios técnicos de forma eficiente. Estou em constante 
+          aprendizado e busco sempre oportunidades para aplicar minhas habilidades em projetos inovadores e colaborativos, onde posso 
+          crescer como profissional e contribuir ativamente para o sucesso da equipe.
         </p>
       </section>
 
-      <!-- EDUCAÇÃO -->
       <section id="Education">
         <h1><u data-i18n="education.heading">Educação</u></h1>
         <p id="puc" data-i18n="education.institution">
@@ -95,7 +87,6 @@
         </p>
       </section>
 
-      <!-- EXPERIÊNCIA -->
       <section id="experiencia">
         <h1><u data-i18n="experience.heading">Experiência</u></h1>
         <p id="estagio" data-i18n="experience.role">Estágio - Suporte Técnico - Phelcon</p>

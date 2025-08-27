@@ -23,20 +23,23 @@ body{
   background:var(--nav);
   border-bottom:2px solid var(--line);
 }
+
 .nav__inner{
   max-width:100%;
   margin:0 auto;
-  height:64px;
+  height:60px;
   display:flex;
   align-items:center;
   gap:16px;
   padding:0 16px;
+  
 }
+
 .nav__brand{
   color:var(--text);
   font-weight:700;
   text-decoration:none;
-  font-size:clamp(18px,2.4vw,28px);
+  
   margin-right:auto;
 }
 
@@ -45,19 +48,27 @@ body{
   display:flex;
   align-items:center;
   gap:16px;
+  font-size:22px;
+  text-decoration: none;
 }
 .nav__links a{
   color:var(--text);
   text-decoration:none;
   font-weight:700;
-  font-size:clamp(14px,1.6vw,18px);
+  font-size:22px;
   padding:6px 8px;
   border-radius:6px;
+  margin-left: 85px;
+  margin-right: 85px;
+text-decoration: none;
 }
 .nav__links a.is-active{
   outline:1px solid var(--line);
 }
-
+.nav__brand{
+  font-size: 26px;
+  text-decoration: none;
+}
 /* idioma */
 .nav__lang{
   background:transparent;
@@ -71,6 +82,7 @@ body{
 .nav__lang:hover{
   background:var(--accent);
   color:var(--bg);
+  
 }
 
 /* hamburguer (CSS only) */
@@ -122,7 +134,7 @@ body{
 .card{
   border:1px solid var(--line);
   padding:24px;
-  height: 700px;
+  height: 550px;
 }
 
 .card__title{
@@ -134,7 +146,7 @@ body{
 /* ===== form ===== */
 .form{
   display:grid;
-  gap:70px;
+  gap: 30px;
 }
 .form__label span{
   display:block;

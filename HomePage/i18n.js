@@ -7,7 +7,7 @@ const dict = {
     contact: { title: "Contato" },
     about: {
       heading: "Um pouco sobre mim",
-      body: "Olá! Meu nome é [Seu Nome], sou estudante de Engenharia de Software com formação em Ciência da Computação e grande interesse pelo desenvolvimento full-stack. Tenho experiência prática com Java, React e Tailwind CSS, além de conhecimentos sólidos em bancos de dados SQL e suporte técnico. Durante minha trajetória acadêmica e profissional, atuei no desenvolvimento de soluções web, desde o design da interface até a implementação de funcionalidades e a otimização de desempenho em diferentes camadas da aplicação. Também possuo uma base sólida em estruturas de dados, algoritmos e resolução de problemas, o que me ajuda a lidar com desafios técnicos de forma eficiente. Estou em constante aprendizado e busco sempre oportunidades para aplicar minhas habilidades em projetos inovadores e colaborativos, onde posso crescer como profissional e contribuir ativamente para o sucesso da equipe."
+      body: "Olá! Meu nome é Diogo Henrique, sou estudante de Engenharia de Software grande interesse pelo desenvolvimento de software, em especial na área do backend. Tenho experiência prática com Java, Html e Tailwind CSS, além de conhecimentos sólidos em bancos de dados SQL e suporte técnico. Durante minha trajetória acadêmica e profissional, atuei no desenvolvimento de soluções web, implementação de funcionalidades e suporte tecnico. Também possuo uma base em estruturas de dados, algoritmos e resolução de problemas, o que me ajuda a lidar com desafios técnicos de forma eficiente. Estou em constante aprendizado e busco sempre oportunidades para aplicar minhas habilidades em projetos inovadores e colaborativos, onde posso crescer como profissional e contribuir ativamente para o sucesso da equipe."
     },
     education: {
       heading: "Educação",
@@ -27,17 +27,17 @@ const dict = {
     contact: { title: "Contact" },
     about: {
       heading: "A little about me",
-      body: "Your EN text here..."
+      body: "Hello! My name is Diogo Henrique, and I am a Software Engineering student with a strong interest in software development, especially in backend development. I have hands-on experience with Java, HTML, and Tailwind CSS, as well as solid knowledge of SQL databases and technical support. Throughout my academic and professional journey, I have contributed to the development of web solutions, implementation of new features, and technical support. I also have a foundation in data structures, algorithms, and problem-solving, which enables me to tackle technical challenges efficiently. I am constantly learning and always seeking opportunities to apply my skills in innovative and collaborative projects, where I can grow as a professional and actively contribute to the success of the team."
     },
     education: {
       heading: "Education",
       institution: "PONTIFICAL CATHOLIC UNIVERSITY OF MINAS GERAIS (PUC MINAS)",
-      desc: "Description in EN..."
+      desc: "Performed technical support and monitored IT routines, contributing to the stability and performance of systems, while interacting with users and teams to resolve incidents and improve processes."
     },
     experience: {
       heading: "Experience",
       role: "Intern — Tech Support — Phelcon",
-      desc: "Description in EN..."
+      desc: "Work in technical support and monitoring of IT routines, contributing to the stability and performance of systems, as well as interacting with users and teams to resolve incidents and improve processes."
     }
   }
 };

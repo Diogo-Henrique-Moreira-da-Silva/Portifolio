@@ -179,7 +179,7 @@ main.projects-page{
 .project-thumb{
   width:100%;
   height:min(38vh, 320px);
-  object-fit:cover;
+  object-fit:contain;
   display:block;
 }
 

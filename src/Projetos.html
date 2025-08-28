@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="projects.title">Projetos em destaque</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/Style.css" />
+  <link rel="stylesheet" href="assets/css/Projeto.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Gustavo</a>
+    <nav>
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="Projetos.html" class="active" data-i18n="nav.projects">Projetos</a>
+      <a href="Curriculo.html" data-i18n="nav.resume">Currículo</a>
+      <a href="index.html#education" data-i18n="nav.education">Education</a>
+      <a href="index.html#experience" data-i18n="nav.experience">Experience</a>
+      <a href="Contato.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <button id="langToggle" class="lang-toggle-btn" type="button" aria-label="Switch language">EN</button>
+  </header>
+
+  <main class="projects-page">
+    <h1 data-i18n="projects.title">Projetos em destaque</h1>
+
+    <section class="carousel" aria-label="" data-i18n-attr="aria-label:projects.carouselLabel">
+      <button class="carousel-btn prev" type="button"
+              data-i18n="projects.prevLabel" aria-label="Anterior">Anterior</button>
+
+      <ul class="carousel-track" id="carouselTrack">
+        <li class="slide current">
+          <article class="project-card">
+            <img src="assets/img/gearUp.png" class="project-thumb"alt=""data-i18n-attr="alt:projects.p1.imgAlt">
+            <div class="project-body">
+              <h3 data-i18n="projects.p1.title">Projeto 1 — Gerenciamento...</h3>
+              <p data-i18n="projects.p1.desc1">
+                O projeto GearUp tem como objetivo...
+              </p>
+              <p data-i18n="projects.p1.desc2">
+                Stacks: HTML, CSS, JavaScript, PostgreSQL e Java Spring Boot.
+              </p>
+              <div class="project-actions">
+                <a class="btn outline"
+                   href="https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-1-ti3-9577100-gearup.git" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> <span data-i18n="projects.code">Código</span>
+                </a>
+
+                <div class="tech-icons" aria-label="Tecnologias utilizadas">
+                  <i class="devicon-html5-plain colored"       title="HTML5"      aria-hidden="true"></i>
+                  <i class="devicon-css3-plain colored"        title="CSS3"       aria-hidden="true"></i>
+                  <i class="devicon-javascript-plain colored"  title="JavaScript" aria-hidden="true"></i>
+                  <i class="devicon-postgresql-plain colored"  title="PostgreSQL" aria-hidden="true"></i>
+                  <i class="devicon-java-plain colored"        title="Java"       aria-hidden="true"></i>
+                  <i class="devicon-spring-plain colored"      title="Spring Boot"aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li class="slide">
+          <article class="project-card">
+            <img src="assets/img/Athenas Bufftet.png"class="project-thumb"alt=""data-i18n-attr="alt:projects.p2.imgAlt">
+            <div class="project-body">
+              <h3 data-i18n="projects.p2.title">Projeto 2 — G-AGRO</h3>
+              <p data-i18n="projects.p2.desc1">O G-AGRO foi um projeto...</p>
+              <p data-i18n="projects.p2.desc2">Stack: PostgreSQL, HTML, CSS, JS, React, Bootstrap, Spring Boot.</p>
+              <div class="project-actions">
+                <a class="btn outline"
+                   href="https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti2-3687100-g-agro.git"
+                   target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> <span data-i18n="projects.code">Código</span>
+                </a>
+
+                <div class="tech-icons" aria-label="Tecnologias utilizadas">
+                  <i class="devicon-postgresql-plain colored"  title="PostgreSQL"></i>
+                  <i class="devicon-html5-plain colored"       title="HTML5"></i>
+                  <i class="devicon-css3-plain colored"        title="CSS3"></i>
+                  <i class="devicon-javascript-plain colored"  title="JavaScript"></i>
+                  <i class="devicon-react-original colored"    title="React"></i>
+                  <i class="devicon-bootstrap-plain colored"   title="Bootstrap"></i>
+                  <i class="devicon-java-plain colored"        title="Java"></i>
+                  <i class="devicon-spring-plain colored"      title="Spring Boot"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        
+      </ul>
+
+      <button class="carousel-btn next" type="button"
+              data-i18n="projects.nextLabel" aria-label="Próximo">></button>
+
+      <div class="carousel-dots" id="carouselDots"
+           data-i18n-attr="aria-label:projects.dotsLabel" aria-label="Navegação de slides"></div>
+    </section>
+  </main>
+
+  <script src="assets/js/Script.js" defer></script>
+  <script src="assets/js/Projeto.js" defer></script>
+</body>
+</html>

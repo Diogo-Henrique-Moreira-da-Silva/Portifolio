@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+  --bg: #000;
+  --text: #fff;
+  --muted: #cbd5e1cc;
+  --card: #111;
+  --accent: #b74b4b;
+  --border: #ffffff22;
+  --radius: 2rem;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  text-decoration:none;
+  border:0;
+  outline:0;
+  font-family:'Poppins',sans-serif;
+}
+
+html{ font-size:62.5%; }
+
+body{
+  width:100%;
+  min-height:100vh;
+  overflow-x:hidden;
+  background-color:var(--bg);
+  color:var(--text);
+}
+
+header{
+  position:fixed;
+  inset:0 0 auto 0;
+  width:100%;
+  padding:1rem 9%;
+  background:transparent;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:100;
+}
+
+.logo{
+  font-size:3rem;
+  color:var(--accent);
+  font-weight:800;
+  cursor:pointer;
+  transition:transform .3s ease;
+}
+.logo:hover{ transform:scale(1.06); }
+
+nav a{
+  font-size:1.8rem;
+  color:var(--text);
+  margin-left:4rem;
+  font-weight:500;
+  transition:.3s ease;
+  border-bottom:3px solid transparent;
+}
+nav a:hover,
+nav a.active{
+  color:var(--accent);
+  border-bottom:3px solid var(--accent);
+}
+
+@media(max-width: 995px){
+  nav{
+    position:absolute;
+    display:none;
+    top:100%;
+    right:9%;
+    width:40%;
+    border-left:3px solid var(--accent);
+    border-bottom:3px solid var(--accent);
+    border-bottom-left-radius:2rem;
+    padding:1.6rem;
+    background-color:#161616;
+  }
+  nav.active{ display:block; }
+  nav a{
+    display:block;
+    font-size:2rem;
+    margin:2.4rem 0;
+  }
+  nav a:hover,
+  nav a.active{
+    padding:1rem;
+    border-radius:.5rem;
+    border-bottom:.5rem solid var(--accent);
+  }
+}
+
+section{
+  min-height:100vh;
+  padding:5rem 9% 5rem;
+}
+
+main.projects-page{
+  max-width: 1200px;
+  margin: 120px auto 60px; 
+  padding: 0 16px;
+}
+
+.projects-page h1{
+  font-size:clamp(2.2rem, 3vw, 3.2rem);
+  font-weight:700;
+  margin-bottom:2.4rem;
+}
+
+.btn{
+  display:inline-block;
+  padding:1rem 2.8rem;
+  background-color:transparent;
+  border-radius:4rem;
+  font-size:1.6rem;
+  color:var(--accent);
+  letter-spacing:.3rem;
+  font-weight:600;
+  border:2px solid var(--accent);
+  transition:.25s ease;
+  cursor:pointer;
+}
+.btn:hover{
+  transform:translateY(-2px);
+  background-color:var(--accent);
+  color:#000;
+  box-shadow:0 0 25px var(--accent);
+}
+.btn.outline{
+  background:transparent;
+  border:1px solid currentColor;
+}
+
+.carousel{
+  position:relative;
+  overflow:hidden;
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+  box-shadow:var(--shadow);
+}
+
+.carousel-track{
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:100%;
+  transition:transform 400ms ease;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.slide{
+  padding:16px;
+  box-sizing:border-box;
+}
+
+.project-card{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+  background:var(--card);
+  color:var(--text);
+  border-radius:calc(var(--radius) - 6px);
+  overflow:hidden;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.project-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 16px 40px rgba(0,0,0,.45);
+  border-color:color-mix(in oklab, var(--accent) 40%, transparent);
+}
+
+.project-thumb{
+  width:100%;
+  height:min(38vh, 320px);
+  object-fit:cover;
+  display:block;
+}
+
+.project-body{
+  padding:16px 16px 20px;
+}
+.project-body h3{
+  margin:0 0 8px;
+  font-size:clamp(1.8rem, 2.2vw, 2.2rem);
+  font-weight:700;
+}
+.project-body p{
+  color:var(--muted);
+  font-size:1.4rem;
+  line-height:1.6;
+}
+.project-actions{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.carousel-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  border:0;
+  background:rgba(0,0,0,.55);
+  color:#fff;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  font-size:28px;
+  line-height:44px;
+  text-align:center;
+  cursor:pointer;
+  z-index:2;
+  backdrop-filter:blur(4px);
+  transition: background .2s ease, transform .2s ease;
+}
+.carousel-btn:hover{
+  background:rgba(0,0,0,.75);
+  transform:translateY(-50%) scale(1.06);
+}
+.carousel-btn.prev{ left:10px; }
+.carousel-btn.next{ right:10px; }
+
+.carousel-dots{
+  display:flex;
+  justify-content:center;
+  gap:8px;
+  padding:12px 0 4px;
+}
+.carousel-dots button{
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  border:0;
+  background:#666;
+  cursor:pointer;
+  transition: transform .2s ease, background .2s ease;
+}
+.carousel-dots button[aria-current="true"]{
+  background:#fff;
+  transform:scale(1.2);
+}
+
+@media (min-width: 768px){
+  .project-card{
+    grid-template-columns:1.25fr 1fr;
+    align-items:stretch;
+  }
+  .project-thumb{
+    height:auto;
+    min-height:320px;
+  }
+}
+
+@media (max-width:1000px){
+  .projects-page{ margin: 110px auto 50px; }
+}
+
+@media (max-width:995px){
+  .projects-page{ margin: 96px auto 40px; }
+}
+
+:where(a, button, .btn):focus-visible{
+  outline:2px dashed var(--accent);
+  outline-offset:3px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .carousel-track{ transition:none; }
+  .project-card{ transition:none; }
+  .carousel-btn{ transition:none; }
+}
+
+.container{
+  max-width:1200px;
+  margin-inline:auto;
+  padding-inline:16px;
+}
+
+.lang-toggle-btn{
+  margin-left: 1.6rem;
+  padding: .6rem 1.2rem;
+  font-size: 1.3rem;
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #b74b4b;
+  cursor: pointer;
+  transition: .2s ease;
+}
+.lang-toggle-btn:hover{
+  background: #b74b4b;
+  color: #000;
+  box-shadow: 0 0 14px #b74b4b;
+}
+
+.tech-icons{
+  margin-left: auto;           
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.tech-icons i{
+  font-size: 2rem;             
+  opacity: .95;
+  transition: transform .2s ease, opacity .2s ease, filter .2s ease;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.25));
+}
+
+.tech-icons i:hover{
+  transform: translateY(-2px) scale(1.05);
+  opacity: 1;
+}
